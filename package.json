@@ -1,0 +1,67 @@
+{
+  "name": "map-pointer",
+  "version": "0.0.0",
+  "description": "Map from one object to another using JSON pointers",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "lint": "tslint \"src/**/*.ts\"",
+    "build": "rimraf dist && tsc",
+    "specs": "jest --coverage",
+    "test": "npm run -s lint && npm run -s build && npm run -s specs",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/blakeembrey/map-pointer.git"
+  },
+  "keywords": [
+    "map",
+    "json",
+    "pointer",
+    "select",
+    "value",
+    "object",
+    "property"
+  ],
+  "author": {
+    "name": "Blake Embrey",
+    "email": "hello@blakeembrey.com",
+    "url": "http://blakeembrey.me"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/blakeembrey/map-pointer/issues"
+  },
+  "homepage": "https://github.com/blakeembrey/map-pointer",
+  "jest": {
+    "testEnvironment": "node",
+    "transform": {
+      ".(ts|tsx)": "ts-jest/preprocessor.js"
+    },
+    "testRegex": "src/.*\\.(?:test|spec)\\.(ts|tsx|js)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ]
+  },
+  "devDependencies": {
+    "@types/jest": "^19.2.2",
+    "@types/json-pointer": "^1.0.30",
+    "@types/node": "^7.0.8",
+    "getvalue": "^1.1.1",
+    "jest": "^19.0.2",
+    "json-pointer": "^0.6.0",
+    "rimraf": "^2.6.1",
+    "ts-jest": "^19.0.2",
+    "tslint": "^4.5.1",
+    "tslint-config-standard": "^4.0.0",
+    "typescript": "^2.2.1"
+  }
+}
