@@ -53,15 +53,17 @@
   },
   "devDependencies": {
     "@types/jest": "^19.2.2",
-    "@types/json-pointer": "^1.0.30",
     "@types/node": "^7.0.8",
-    "getvalue": "^1.1.1",
     "jest": "^19.0.2",
-    "json-pointer": "^0.6.0",
     "rimraf": "^2.6.1",
     "ts-jest": "^19.0.2",
     "tslint": "^4.5.1",
     "tslint-config-standard": "^4.0.0",
     "typescript": "^2.2.1"
+  },
+  "dependencies": {
+    "@types/json-pointer": "^1.0.30",
+    "getvalue": "^1.1.1",
+    "json-pointer": "^0.6.0"
   }
 }
